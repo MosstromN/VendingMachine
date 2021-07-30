@@ -6,7 +6,6 @@
 package com.mostromn.vendingmachinetwo.service;
 
 import com.mostromn.vendingmachinetwo.dao.VendingMachineDao;
-import static com.mostromn.vendingmachinetwo.dao.VendingMachineDaoFileImpl.AUDIT_FILE;
 import com.mostromn.vendingmachinetwo.dao.VendingMachinePersistenceException;
 import com.mostromn.vendingmachinetwo.dto.Coin;
 import com.mostromn.vendingmachinetwo.dto.Item;

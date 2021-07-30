@@ -8,16 +8,12 @@ package com.mostromn.vendingmachinetwo.app;
 import com.mostromn.vendingmachinetwo.controller.VendingMachineController;
 import com.mostromn.vendingmachinetwo.dao.AuditDaoFileImpl;
 import com.mostromn.vendingmachinetwo.dao.VendingMachineDao;
-import com.mostromn.vendingmachinetwo.dao.VendingMachinePersistenceException;
-import com.mostromn.vendingmachinetwo.service.NotEnoughInventoryException;
-import com.mostromn.vendingmachinetwo.service.NotEnoughMoneyException;
 import com.mostromn.vendingmachinetwo.service.VendingMachineServiceLayer;
 import com.mostromn.vendingmachinetwo.ui.UserIO;
 import com.mostromn.vendingmachinetwo.ui.UserIOConsoleImpl;
 import com.mostromn.vendingmachinetwo.ui.VendingMachineView;
 import com.mostromn.vendingmachinetwo.dao.VendingMachineDaoFileImpl;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  *
  * @author nicholasmostrom
