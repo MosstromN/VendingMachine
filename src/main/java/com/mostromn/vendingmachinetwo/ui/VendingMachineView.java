@@ -11,14 +11,20 @@ import com.mostromn.vendingmachinetwo.dto.Item;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.HashMap;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 /**
  *
  * @author nicholasmostrom
  */
+
+@Component
 public class VendingMachineView {
 
+    @Autowired
     private UserIO io;
 
+    @Autowired
     public VendingMachineView(UserIO io) {
         this.io = io;
     }

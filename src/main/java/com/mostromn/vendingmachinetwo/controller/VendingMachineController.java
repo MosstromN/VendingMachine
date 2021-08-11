@@ -18,17 +18,21 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import static java.util.Map.entry;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author nicholasmostrom
  */
-    
+ 
+@Component
  public class VendingMachineController {
 
     private VendingMachineView view;
     private VendingMachineServiceLayer service;
 
+    @Autowired
     public VendingMachineController(VendingMachineServiceLayer service, VendingMachineView view, UserIO myIO) {
         this.service = service;
         this.view = view;

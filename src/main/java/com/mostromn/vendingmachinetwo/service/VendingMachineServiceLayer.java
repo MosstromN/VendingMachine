@@ -16,17 +16,21 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author nicholasmostrom
  */
 
+@Component
 public class VendingMachineServiceLayer {
 
     VendingMachineDao dao;          
     HashMap<String, Coin> coins = new HashMap<>();
 
+    @Autowired
     public VendingMachineServiceLayer(VendingMachineDao dao) {
         this.dao = dao;
     }

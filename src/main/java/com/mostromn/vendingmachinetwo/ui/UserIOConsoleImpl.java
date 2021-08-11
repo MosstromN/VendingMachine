@@ -6,11 +6,14 @@
 package com.mostromn.vendingmachinetwo.ui;
 
 import java.util.Scanner;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author nicholasmostrom
  */
+
+@Component
 public class UserIOConsoleImpl implements UserIO{
 
     
